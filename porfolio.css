@@ -1,0 +1,253 @@
+/*                                          CSS PART                                              */
+
+/* wildcard styling */
+* {
+    box-sizing: border-box;
+}
+
+/* padding for whole body */
+body{
+    /* background-color: lightblue; */
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+/* styling body */
+
+
+/* anchor tag decoration */
+a {
+    text-decoration: none;
+    color: #5673C8;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+/* paragraph tag decoration */
+p {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+
+}
+
+/* row and column decoration */
+.row {
+   
+   	 /* display: inline flex;
+	flex-wrap: wrap;  */
+     display: flex;
+	flex-wrap: wrap; 
+    
+}
+#main{
+    background-image: url('https://img.freepik.com/free-vector/abstract-background-consisting-colorful-arcs-illustration_456031-149.jpg?w=2000');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.row>.column {
+    padding: 10px;
+}
+
+.column {
+
+    width: 100%;
+    padding: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* content decoration */
+.content {
+    background-size: cover;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+/* window size 850 width set */
+@media screen and (max-width: 850px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* window size 400 width set */
+@media screen and (max-width: 400px) {
+    .column {
+        width: 100%;
+    }
+}
+
+  .footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+    .banar{
+      background-color:gray;
+      width: fit-content;
+      height: 450px;
+      margin-bottom: 125px;
+      /* margin-left: 310px; */
+      border-radius: 10px ;
+      /* padding-left: 300px; */
+    }
+
+    #closer{
+      
+      padding-right: 398px;
+      margin-left: 356px;
+    }
+    #thot{
+      background-color: white;
+      /* background-color:gray; */
+      text-shadow: #24262b;
+      text-shadow: 25px;
+      text-align: center;
+    text-decoration: underline;  
+    }
+
+   #percantage{
+    background-color: gray;
+    margin-bottom: 205px;
+    /* box-sizing: content-box; */
+    border: solid;
+    border-radius: 125px;
+    box-shadow: #2654c8;
+    /* padding-bottom: 210px; */
+padding: 150px;
+   }
+   #trp{
+    text-shadow: 25px;
+      text-align: center;
+    text-decoration: underline;
+   
+   }
+
+   #intro{
+    background-color:white;
+    margin-bottom: 205px;
+    box-sizing: content-box;
+    border: solid;
+    border-radius: 125px;
+    box-shadow: #2654c8;
+
+   }
+
+
+#video{
+
+  width: 80%;
+  /* height: ; */
+  
+}
+#video-container{
+  background-image: url("https://www.thoughtco.com/thmb/Zya6PS3m6XjRAmVo1HONvY9DW_A=/3865x2174/smart/filters:no_upscale()/abstract-paper-flower-pattern-656688606-5acfba2eae9ab80038461ca0.jpg");
+    margin-bottom: 205px;
+    box-sizing: content-box;
+    border: solid;
+    border-radius: 25px;
+    box-shadow: #2654c8;
+    padding: 160px;
+}
+#song{
+  /* position:top; */
+  
+    
+  background-image:url("https://www.exploratorium.edu/sites/default/files/feature_slides/FY22_AD_HomePage_960x380_B.png") ;
+    margin-bottom: 205px;
+    box-sizing: content-box;
+    border: solid;
+    border-radius: 25px;
+    box-shadow: #2654c8;
+}
+.hr{
+  background-color: white;
+}
